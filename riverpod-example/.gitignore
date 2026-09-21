@@ -1,0 +1,21 @@
+# Generated .freezed.dart / .g.dart files are committed here, the same as in
+# ../freezed-example, so that the examples can be read without running codegen.
+
+# Files and directories created by pub.
+.dart_tool/
+.packages
+**/doc/api/
+
+# Conventional directory for build output.
+/build/
+
+# Miscellaneous
+*.log
+*.swp
+.DS_Store
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/

@@ -1,13 +1,20 @@
 name: riverpod_example
+description: Riverpod providers with code generation, including a freezed model.
 environment:
   sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
+  freezed_annotation: ^2.4.1
+  http: ^1.2.0
+  json_annotation: ^4.9.0
   riverpod: ^2.5.0
   riverpod_annotation: ^2.3.4
 
 dev_dependencies:
-  build_runner:
-  custom_lint:
-  riverpod_generator: ^2.3.11
-  riverpod_lint: ^2.3.9
+  # custom_lint / riverpod_lint were declared here but never enabled — there is
+  # no analysis_options.yaml activating them — and they pull in an
+  # analyzer_plugin too old for the analyzer that codegen needs.
+  build_runner: ^2.5.0
+  freezed: ^2.5.0
+  json_serializable: ^6.9.0
+  riverpod_generator: ^2.6.0
